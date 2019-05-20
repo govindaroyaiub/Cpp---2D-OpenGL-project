@@ -1,0 +1,17 @@
+Download:
+CodeBlocks 16.01MinGw 
+[https://sourceforge.net/projects/codeblocks/files/Binaries/16.01/Windows/codeblocks-16.01mingw-setup.exe/download]
+Windows (7/8/10)
+====================
+
+On 32bit versions of windows:
+copy glut.h in include/GL folder to C:\Program Files(x86)\CodeBlocks\MinGW\include\GL
+copy libglut32.lib in lib folder to C:\Program Files (x86)\CodeBlocks\MinGW\lib
+copy glut32.dll to C:\windows\system32 (for 32bit) / copy glut32.dll to C:\windows\sysWOW64 (for 64bit) 
+ 
+Linker Setup
+------------------
+Settings->compiler->linker->add
+libopengl32.a
+libglu32.a
+libglut32.a
